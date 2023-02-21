@@ -109,9 +109,33 @@ section {
     transition: .4s;
 }
 
-header.sticky{
+header.sticky {
     background: var(--bg-color);
 }
-.about{
+
+.about {
     display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 4rem;
+    align-items: center;
+}
+
+.about-img img{
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+
+.about-text span{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.about-text h2{
+    font-size: var(--h2-font);
+}
+
+.about-text p{
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.7;
 }
